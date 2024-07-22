@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validator</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav-bar ">
+            <div class="logo"><img src="Img/logo.png" alt="logo" /><h2 class="logo-name">evalid.com</h2></div>
+            <div class="navigation">
+                <ul class="list">
+                    <li><a href="#home"><h4 class="active">Home</h4></a></li>
+                    <li><a href="#"><h4>About</h4></a></li>
+                    <li><a href="#"><h4>Contact</h4></a></li>
+                    <i class="ri-menu-3-fill"></i>
+                </ul>
+            </div>
+        </nav>
+        <div id="home" class="main">
+            <div id="left" class="left">
+                <h1 class="heading">Email <span class="secondary-text">Validator</span> Tool</h1>
+                <h2 class="heading">Check If the enterred email address exists or not.</h2>
+                <form class="space" action="/submit" method="post">
+                    <div class="input-element">
+                        <input type="text" id="text" class="text-box" value="" placeholder="Enter the email address"
+                            required />
+                        <input type="submit" id="submit" class="btn" value="Validate" />
+                        <input type="button" id="clear" class="btn" value="Clear" />
+                    </div>
+                </form>
+                <div id="result" class="result">
+                    <h3 id="default-text">Your results will be shown here...</h3>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./Img/valid.jpg" alt="image">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
